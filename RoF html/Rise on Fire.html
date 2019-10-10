@@ -75,13 +75,13 @@
             }
 
             .collapsible {
-                background-color: #777;
-                color: black;
+                background-color: rgb(51, 49, 49);
+                color: white;
                 cursor: pointer;
                 padding: 18px;
                 width: 40% align=center;
                 border: none;
-                text-align: left;
+                text-align: center;
                 outline: none;
                 font-size: 15px;
             }
@@ -92,10 +92,11 @@
 
             .content {
                 padding: 0 18px;
+                width: 40% align=center;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.2s ease-out;
-                background-color: #f1f1f1;
+                background-color: black;
             }
         </style>
         <script>
@@ -152,45 +153,80 @@
         </video>
         <br>
         <br>
-        <h2>Animated Collapsibles</h2>
-
-<p>A Collapsible:</p>
-<button class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<p>Collapsible Set:</p>
-<button class="collapsible">Open Section 1</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 2</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
+        <h2><u>Letras de canciones</u></h2>
+        <button class="collapsible">The Pray</button>
+        <div class="content">
+            <p>After all the devastating storms (all the devastating storms)<br>
+                I just want to free myself and explode (with everything)<br>
+                Who gets in my way, (who gets in my way) x2<br>
+                feel my rage, and desire for revenge, calm down<br>
+                <br>
+                [Chorus]<br>
+                With my hands I will mold your life (with my hands I will mold your life)<br>
+                As a puppet manipulated by the world<br>
+                Who gets in my way, (who gets in my way) x2<br>
+                will feel my rage, and desire for revenge, calm down...<br>
+                <br>
+                [Part duo of guitars]<br>
+                All this pain, all this suffered, vanishes with the wind, creating this infernal storm... die!<br>
+                With my hands I will mold your life<br>
+                As if you were a puppet manipulated by the world<br>
+                Who gets in my way, (who gets in my way) x2<br>
+                will feel my rage, and desire for revenge, calm down...<br>
+                <br>
+                [Breakdown final]<br>
+                All this pain caused by your lies (by the world), madness is killing me, you will see that I'll reach my objective... destroy you all<br>
+            </p>
+        </div>
+        <button class="collapsible">Chaotic Tomorrow</button>
+        <div class="content">
+            <p>I came with everything here 
+                No sense, no blind view
+                If you can’t see how could you feel?
+                All the pain we suffered for this
+                No, I can’t stay quiet
+                Dark voices can’t really require
+                At this rate we have no choices
+                Feel the hate of all that voices
+                The hate, we’ve been changing
+                We’ve been changing for, a better tomorrow
+                Sorrow, of a new era
+                We changed for a better dawn
+                For a better dawn
+                Don’t cry my friend
+                We will find our way
+                A truly way to breath
+                There is no tomorrow, now I feel betrayed
+                Something’s wrong in the air
+                Don’t you feel this hollow?
+                (x2)
+                The hate, we’ve been wasting
+                We’ve been waiting for, a chaotic tomorrow
+                Sorrow, of a new era
+                We’ve been changing for wasting the time
+                The hate, we’ve been wasting, we’ve been waiting for
+                A chaotic tomorrow
+            </p>
+        </div>
+        <button class="collapsible">Open Section 3</button>
+        <div class="content">
+            <p>Viva cristo</p>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                });
+            }
+        </script>
         <br>
         <br>
         <br>
